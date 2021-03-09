@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main"
+    app:startDestination="@id/navi_pingDaHome">
+
+
+    <fragment
+        android:id="@+id/navi_calender"
+        android:name="kr.dformula.psydiary.ui.fargment.CalenderFragment"
+        android:label="CalenderFragment" />
+    <fragment
+        android:id="@+id/navi_pingDaTalk"
+        android:name="kr.dformula.psydiary.ui.fargment.PingDaTalkFragment"
+        android:label="PingDaTalkFragment" />
+    <fragment
+        android:id="@+id/navi_homeTown"
+        android:name="kr.dformula.psydiary.ui.fargment.HomeTownFragment"
+        android:label="HomeTownFragment" />
+    <fragment
+        android:id="@+id/navi_pingDaHome"
+        android:name="kr.dformula.psydiary.ui.fargment.PingDaHomeActivity"
+        android:label="PingDaHomeActivity" />
+</navigation>

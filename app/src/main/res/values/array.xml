@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name = "spinner_main">
+        <item></item>
+        <item>언어치료 이야기</item>
+        <item>발달장애 이야기(거북맘)</item>
+        <item>ADHD 이야기(토끼맘)</item>
+        <item>치료기관평점</item>
+    </string-array>
+    <string-array name = "speech_therapy_story">
+
+        <item></item>
+        <item>언어치료 QnA</item>
+        <item>언어치료 정보관련</item>
+        <item>언어치료후기</item>
+
+    </string-array>
+    <string-array name = "turtle_mom">
+        <item></item>
+        <item>발달장애 QnA</item>
+        <item>발달장애 관련정보</item>
+        <item>발달장애 치료후기</item>
+
+    </string-array>
+
+    <string-array name = "rabbitmom">
+        <item></item>
+        <item>ADHD QnA</item>
+        <item>ADHD 관련정보</item>
+        <item>ADHD 치료후기</item>
+    </string-array>
+
+
+    <string-array name = "review_ceter">
+        <item></item>
+        <item>언어치료 검사기관</item>
+        <item>발달장애 검사기관</item>
+        <item>ADHD 검사기관</item>
+    </string-array>
+
+</resources>

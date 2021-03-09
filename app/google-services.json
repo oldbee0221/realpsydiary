@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "831566288589",
+    "project_id": "paydiary-3c6bb",
+    "storage_bucket": "paydiary-3c6bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831566288589:android:366b91b9cacb812a70fb84",
+        "android_client_info": {
+          "package_name": "kr.dformula.psydiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831566288589-do9bijs588n6aeee71k4bgstso03cj3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.dformula.psydiary",
+            "certificate_hash": "9739f7d7b482b3a1d285a2df58758943c2902186"
+          }
+        },
+        {
+          "client_id": "831566288589-ps2kp10g5u18h5rro65n7v4j3vc5n85b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh0ULl8gVliz0PxGbzHYmzYIr7CAnjNEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831566288589-ps2kp10g5u18h5rro65n7v4j3vc5n85b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

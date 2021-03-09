@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dL_sideBoard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_pingDaTalk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/floatingActionButton"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_pingdatalk_createbutton"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_create_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="글쓰기"
+                android:textColor="#fff"
+                android:textSize="8sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_pingdatalk_giftbutton"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+            app:layout_constraintEnd_toEndOf="@+id/floatingActionButton">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_card_giftcard_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선물창고"
+                android:textColor="#fff"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/tb_pingDaTalk"
+            tools:ignore="MissingConstraints">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/talk_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/talk_hade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이번주 핑크퀸"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border_redround"
+                        android:src="@drawable/crown_p__"
+                        app:layout_constraintRight_toRightOf="parent"
+                         />
+
+                    <TextView
+                        android:id="@+id/talp_hand_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/border_redround"
+                        android:layout_marginTop="10dp"
+
+
+                        app:layout_constraintTop_toBottomOf="@+id/talk_hade" />
+
+
+
+
+
+
+
+
+                    <androidx.viewpager2.widget.ViewPager2
+
+                        android:id="@+id/talk_hard_viewPager"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/talp_hand_spinner"
+                        android:clipToPadding="false"
+                        android:clipChildren="false"
+                        >
+
+
+                    </androidx.viewpager2.widget.ViewPager2>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/talk_board_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/talk_hard_viewPager">
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="공지"
+                                android:textColor="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="핑다톡 이용정지 사용자 고지 (2/11 업데이트)" />
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:id="@+id/talk_line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/gray"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/talk_board_line1"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/talk_board_line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+
+                                android:text="공지"
+                                android:textColor="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="핑다톡 이용정지 사용자 고지 (2/11 업데이트)" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/talk_line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/gray"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/talk_board_line2"
+                            />
+
+
+                        <LinearLayout
+                            android:id="@+id/talk_board_line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="공지"
+                                android:textColor="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="핑다톡 이용정지 사용자 고지 (2/11 업데이트)" />
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/detailviewfragment_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="300dp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <!--     <Button
+                 android:id="@+id/btn_getData"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="서버 값 불러오기"
+                 app:layout_constraintBottom_toBottomOf="@+id/btn_createData"
+                 app:layout_constraintEnd_toEndOf="@+id/btn_deleteData"
+                 app:layout_constraintStart_toStartOf="@+id/btn_deleteData"
+                 app:layout_constraintTop_toTopOf="@+id/btn_createData"
+                 app:layout_constraintVertical_bias="0.0" />
+
+             <Button
+                 android:id="@+id/btn_createData"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="서버 값 생성"
+                 app:layout_constraintBottom_toTopOf="@+id/btn_upload"
+                 app:layout_constraintEnd_toEndOf="@+id/btn_upload"
+                 app:layout_constraintStart_toStartOf="@+id/btn_upload"
+                 app:layout_constraintTop_toBottomOf="@+id/tb_pingDaTalk" />
+
+             <Button
+                 android:id="@+id/btn_upload"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="서버 값 수정"
+                 app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintHorizontal_bias="0.5"
+                 app:layout_constraintStart_toEndOf="@+id/btn_deleteData"
+                 app:layout_constraintTop_toBottomOf="@+id/btn_createData" />
+     -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_sideBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:theme="@style/NavigationSetHeightTheme"
+        app:itemIconPadding="4dp"
+        app:menu="@menu/pingdatalk_navi_drawable_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

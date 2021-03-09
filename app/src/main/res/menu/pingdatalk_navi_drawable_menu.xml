@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+    <item
+        android:id="@+id/itemPingDaTalk_home"
+        android:title="홈    "
+        android:icon="@drawable/ic_outline_home_10">
+    </item>
+    </group>
+
+    <group>
+    <item
+        android:id="@+id/itemPingDaTalk_ranking"
+        android:title="실시간 랭킹"
+        android:icon="@drawable/ic_outline_emoji_events_10"
+        >
+    </item>
+    </group>
+
+    <group >
+
+        <item
+            android:id="@+id/itemPingDaTalk_magazine"
+            android:title="언어치료 이야기"
+            android:icon="@drawable/ic_baseline_perm_contact_calendar_10"
+
+            >
+        </item>
+    </group>
+    <item android:title="언어치료 QnA"
+        />
+    <item android:title="언어치료 정보관련" />
+    <item android:title="언어치료후기 " />
+
+
+
+    <group >
+
+        <item
+            android:id="@+id/itemPingDaTalk_magazine1"
+            android:title="발달장애 이야기(거북맘)"
+            android:icon="@drawable/ic_baseline_perm_contact_calendar_10">
+        </item>
+    </group>
+    <item android:title="발달장애 QnA " />
+    <item android:title="발달장애 관련정보" />
+    <item android:title="발달장애 치료후기" />
+
+    <group >
+
+        <item
+            android:id="@+id/itemPingDaTalk_magazine2"
+            android:title="ADHD 이야기(토끼맘)"
+            android:icon="@drawable/ic_baseline_perm_contact_calendar_10">
+        </item>
+    </group>
+    <item android:title="ADHD QnA  " />
+    <item android:title="ADHD 관련정보" />
+    <item android:title="ADHD 치료후기" />
+
+    <group >
+
+        <item
+            android:id="@+id/itemPingDaTalk_magazine3"
+            android:title="치료기관평점"
+            android:icon="@drawable/ic_baseline_perm_contact_calendar_10">
+        </item>
+    </group>
+    <item android:title="언어치료 검사기관  "
+
+        />
+    <item android:title="발달장애 검사기관" />
+    <item android:title="ADHD 검사기관 " />
+
+
+
+
+
+
+
+</menu>

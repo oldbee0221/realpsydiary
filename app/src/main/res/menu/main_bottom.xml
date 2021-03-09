@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navi_pingDaHome"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="홈화면 " />
+
+    <item
+        android:id="@+id/navi_calender"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="검색하기 " />
+    <item
+        android:id="@+id/navi_pingDaTalk"
+        android:icon="@drawable/ic_outline_sms_24"
+        android:title="후기게시판" />
+    <item
+        android:id="@+id/navi_padMart"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="마트" />
+    <item
+        android:id="@+id/navi_homeTown"
+        android:icon="@drawable/ic_outline_local_mall_24"
+        android:title="회원정보 " />
+
+
+</menu>
